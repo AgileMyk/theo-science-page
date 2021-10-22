@@ -2,16 +2,26 @@ body {
     background-color: blanchedalmond;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     border: solid gray 4 px;
+    body {
+        // font grows 1px for every 100px of viewport width
+        font-size: calc(16px + 1vw);
+        // leading grows along with font,
+        // with an additional 0.1em + 0.5px per 100px of the viewport
+        line-height: calc(1.1em + 0.5vw);
+      }
 }
 
 header {
     display: flex;
     align-content: center;
     gap:250px;
-    width: 100vw;
+    max-width: 100%;
     height: 120px;
     background-color: slategray;
     margin-bottom: 3px;
+}
+
+p {
 }
 
 img {
@@ -35,6 +45,10 @@ img {
     display: flex;
     align-content: center;
     align-items: center;
+    border: 4px solid white;
+    border-style: ridge;
+    padding:5px;
+    border-radius: 15px;
 }
 
 ul {
@@ -48,6 +62,17 @@ ul {
     text-decoration: none;
 }
 
+.point {
+border: 2px solid darkgray;
+border-radius: 7px;
+}
+
+.def {
+    border: 1px dotted rgb(73, 73, 73);
+    border-radius: 7px;
+    margin-left: 25px;
+    justify-items: center;
+}
 /*
 section {
     border: 2px solid white;
