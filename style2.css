@@ -1,3 +1,74 @@
+body {
+    background-color: rgb(196, 193, 193);
+    @font-face { font-family: josefin-sans;
+        src: url(../)
+}
+
+section {
+    display: flex;
+}
+
+.pp {
+
+}
+
+.floated {
+    display: flex;
+    float: right;
+}
+
+figure {
+    display: inline-flex;
+    max-width: 25%;
+    height: auto;
+    
+}
+
+header {
+    background-color: darkslategray;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    background-image: 
+}
+
+nav {
+    background-color: darkslategray;
+ 
+}
+
+.link-list li {
+
+} 
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    opacity: .75;
+}
+
+.list-one {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    gap:18px;
+    align-items: center;
+}
+
+
+.pagetitle {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+a {
+    text-decoration: none;
+    color: blanchedalmond;
+}
+
 h1 {
 
 }
@@ -13,3 +84,19 @@ p {
 h2 {
 
 }
+
+.caption {
+    opacity: 0.5;
+    background-color:white;
+    color:black;
+    display: block;
+    font-family: 'Playfair Display', serif;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 14px;
+    margin-left: 20px;
+    padding: 10px;
+    position: relative;
+    top: 80%;
+    width: 60%;
+  }
