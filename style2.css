@@ -1,14 +1,12 @@
+* {
+    /*box-sizing: border-box*/
+}
+
 body {
     background-color: blanchedalmond;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: solid gray 4 px;
-    body {
-        // font grows 1px for every 100px of viewport width
-        font-size: calc(16px + 1vw);
-        // leading grows along with font,
-        // with an additional 0.1em + 0.5px per 100px of the viewport
-        line-height: calc(1.1em + 0.5vw);
-      }
+
+
 }
 
 header {
@@ -19,9 +17,38 @@ header {
     height: 120px;
     background-color: slategray;
     margin-bottom: 3px;
+    position: fixed;
+    opacity: 85%;
+    border-radius: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    position: relative;
+    left: 30px;
+    border-radius: 15px;
+
 }
 
 p {
+    max-width: 800px;
+    min-width: 150px;
+    /*verflow: scroll;*/
+
+}
+
+.pp {
+    text-align: justify;
+}
+
+.one {
+    float:left;
+    justify-content: flex-start;
+}
+
+figure {
+    displ
 }
 
 img {
@@ -29,6 +56,10 @@ img {
     width:auto;
     margin: 5px;
     justify-content: flex-start;
+    position: relative;
+    right: 30px;
+    border-radius: 20px;
+    
 }
 
 .nav a {
